@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Vanilla JS Trivial Trivia!">
+    <meta property="og:description" content="Vanilla JS Trivial Trivia!">
+    <meta property="og:image" content="assets/images/mac12.png">
+    <meta property="og:url" content="https://sonmic.github.io/TriviaGame/">
+    <link rel="shortcut icon" type="image/png" href="assets/images/mac12.png" />
+    <title>Vanilla JS</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Lobster|Cinzel+Decorative|Bentham|Montserrat|Charm|Cormorant+SC|Flamenco|Gruppo|Marcellus+SC|Petit+Formal+Script|Poiret+One|Syncopate&display=swap" rel="stylesheet">
+    <!-- Linking jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="assets/javascript/circletype.min.js"></script>
+    <!-- Linking jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <div class="curved">
+                <span id="arc">Is Vanilla JS worth learning?</span>
+                <div id="icecream">
+                    <img class="icecream" src="assets/images/vanilla2.png"></div>
+
+            </div>
+
+        </div>
+        <div class="right">
+            <h1>Vanilla JS</h1>
+
+            <p>Vanilla JS is a fast, lightweight, cross-platform framework for building incredible, powerful JavaScript applications.</p>
+            <button class="flex-container" id="startbtn">START</button>
+            <div class="flex-container" id="quizbox">
+                <div class="qustion"><span id="qustion"></span></div>
+                <label class="opt"><input type="radio" name="option" value="1"> <span id="opt1"></span></label>
+                <label class="opt"><input type="radio" name="option" value="2"> <span id="opt2"></span></label>
+                <label class="opt"><input type="radio" name="option" value="3"> <span id="opt3"></span></label>
+                <label class="opt"><input type="radio" name="option" value="4"> <span id="opt4"></span></label>
+                <button id="nextbtn" class="nextbtn">NEXT</button>
+            </div>
+            <div id="result" class="container result" style="display:none;"></div>
+        </div>
+    </div>
+
+    <!-- Linking JavaScript file -->
+    <script type="text/javascript " src="assets/javascript/app.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+.quizbox {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.yum {
+    height: 200px;
+    width: 200px;
+    flex-wrap: nowrap;
+    display: inline-block;
+}
+
+.icecream,
+#icecream {
+    width: 300px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+h1 {
+    font-family: 'Marcellus SC', serif;
+    font-size: 70px;
+    color: #6c6f74;
+}
+
+body {
+    margin: auto;
+    width: 80%;
+    font-family: 'Julius Sans One', serif;
+    color: #aaadb3;
+    /* font-size: 18px; */
+    background-color: #fff8ed;
+    background-image: display: flex;
+    text-align: center;
+    /*     
+    background-image: url("../images/vanilla2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left; */
+}
+
+p {
+    padding: 10px;
+}
+
+.instructions {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrapper {
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    border-bottom: 1px solid #6c6f74;
+    margin-bottom: 0px;
+}
+
+#goal {
+    font-size: 60px;
+    color: #fbfdee;
+    text-shadow: 3px 3px #64686f;
+    background: #e7e8e2;
+    border-radius: 50%;
+    padding: 30px 30 30 30;
+}
+
+.left,
+.right {
+    margin-top: 100px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+
+/* curved text */
+
+#curved {
+    position: relative;
+}
+
+#arc {
+    /* font-family: 'Marcellus SC', serif; */
+    font-family: 'Julius Sans One', sans-serif;
+    position: absolute;
+    /* letter-spacing: 2px; */
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 48px;
+    }
+    p {
+        padding: 3px;
+        font-size: 23px;
+    }
+    .instructions {
+        font-family: Ropa Sans;
+        font-size: 10px;
+        /* font-weight: bold; */
+    }
+    .yum {
+        height: 150px;
+        width: 150px;
+        flex-wrap: nowrap;
+        display: inline-block;
+    }
+    .container {
+        padding: 2%;
+    }
+    .flex-container {
+        text-align: center
+    }
+    #goal {
+        padding: 0px auto;
+    }
+}
