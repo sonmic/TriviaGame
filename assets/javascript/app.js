@@ -10,9 +10,11 @@ let arc = new CircleType(document.getElementById('arc'))
 // code starts here
 // timer
 
-var timeLeft = 20;
+
 var elem = document.getElementById('countdown');
-var timerId = setInterval(countdown, 1000);
+
+var timeLeft = 20;
+
 
 function countdown() {
     if (timeLeft == -1) {
@@ -75,6 +77,7 @@ function showCurrentQuestion() {
 }
 
 $('#nextbtn').on('click', function() {
+    clearInterval(timerId);
     let userInput = $('#quizbox input:checked').val();
     if (userInput === questions[currentQuestion].answer) {
         console.log(userInput);
@@ -82,13 +85,16 @@ $('#nextbtn').on('click', function() {
     }
     ++currentQuestion;
 
-    if (currentQuestion === 4) {
+    if (currentQuestion === questions.length) {
         $("#quizbox").remove();
         $("#result").show();
         $("#score").text(score);
         $("#countdown").remove();
     } else {
-        countdown.reset();
+        // countdown.reset();
+
+        timeLeft = 20;
+        var timerId = setInterval(countdown, 1000);
         showCurrentQuestion();
         $("#countdown").show();
     }
@@ -101,41 +107,5 @@ $('#startbtn').on('click', function() {
     $("#quizbox").show();
     $("#nextbtn").show();
     $("#countdown").show();
+    var timerId = setInterval(countdown, 1000);
 });
-
-//start button to start the quiz
-
-// $('#startbtn').on('click', function() {
-//     $('#question').text(questions[0].question);
-//     $('#opt1').text(questions[0].opt1);
-//     $('#opt2').text(questions[0].opt2);
-//     $('#opt3').text(questions[0].opt3);
-//     $('#opt4').text(questions[0].opt4);
-//     $("#startbtn").remove();
-//     $("#quizbox").show();
-//     $("#nextbtn").show();
-// });
-
-// $('#nextbtn').on('click', function() {
-//     $('#question').text(questions[1].question);
-//     $('#opt1').text(questions[1].opt1);
-//     $('#opt2').text(questions[1].opt2);
-//     $('#opt3').text(questions[1].opt3);
-//     $('#opt4').text(questions[1].opt4);
-// });
-
-// $('#nextbtn').on('click', function() {
-//     $('#question').text(questions[2].question);
-//     $('#opt1').text(questions[2].opt1);
-//     $('#opt2').text(questions[2].opt2);
-//     $('#opt3').text(questions[2].opt3);
-//     $('#opt4').text(questions[2].opt4);
-// });
-
-// $('#nextbtn').on('click', function() {
-//     $('#question').text(questions[3].question);
-//     $('#opt1').text(questions[3].opt1);
-//     $('#opt2').text(questions[3].opt2);
-//     $('#opt3').text(questions[3].opt3);
-//     $('#opt4').text(questions[3].opt4);
-// });

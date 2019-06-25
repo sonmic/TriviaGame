@@ -24,6 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="assets/javascript/circletype.min.js"></script>
     <script src="assets/javascript/jquery.fittext.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Linking jQuery UI-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -60,6 +61,15 @@
                 <button id="nextbtn" class="nextbtn" style="display:none;">NEXT</button>
             </div>
             <div id="result" class="container result" style="display:none;">YOUR SCORE:<span id="score"></span></div>
+        </div>
+        <div id="popup1" class="overlay" style="display:none;">
+            <div class="popup">
+                <h2>Times up!</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Times up.
+                </div>
+            </div>
         </div>
     </div>
 
