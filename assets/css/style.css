@@ -3,18 +3,12 @@
     flex-wrap: nowrap;
 }
 
-.yum {
-    height: 200px;
-    width: 200px;
-    flex-wrap: nowrap;
-    display: inline-block;
-}
-
 .icecream,
 #icecream {
     width: 300px;
     margin-bottom: 0px;
     margin-left: 10px;
+    vertical-align: bottom;
 }
 
 h1 {
@@ -72,7 +66,6 @@ p {
     margin-top: 100px;
     text-align: center;
     margin: auto;
-    margin-bottom: 0;
 }
 
 
