@@ -9,6 +9,7 @@ let arc = new CircleType(document.getElementById('arc'))
 
 // code starts here
 // timer
+
 var timeLeft = 20;
 var elem = document.getElementById('countdown');
 var timerId = setInterval(countdown, 1000);
@@ -85,10 +86,11 @@ $('#nextbtn').on('click', function() {
         $("#quizbox").remove();
         $("#result").show();
         $("#score").text(score);
+        $("#countdown").remove();
     } else {
+        countdown.reset();
         showCurrentQuestion();
         $("#countdown").show();
-        countdown();
     }
 
 });
@@ -99,7 +101,6 @@ $('#startbtn').on('click', function() {
     $("#quizbox").show();
     $("#nextbtn").show();
     $("#countdown").show();
-    countdown();
 });
 
 //start button to start the quiz
