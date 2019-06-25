@@ -110,4 +110,8 @@ p {
     #goal {
         padding: 0px auto;
     }
+    .wrapper {
+        margin: auto;
+        display: block;
+    }
 }

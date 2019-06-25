@@ -8,6 +8,25 @@ let arc = new CircleType(document.getElementById('arc'))
 
 
 // code starts here
+// timer
+var timeLeft = 20;
+var elem = document.getElementById('countdown');
+var timerId = setInterval(countdown, 1000);
+
+function countdown() {
+    if (timeLeft == -1) {
+        clearTimeout(timerId);
+        timesUp();
+    } else {
+        elem.innerHTML = timeLeft + ' seconds left';
+        timeLeft--;
+    }
+}
+
+function timesUp() {
+    alert("Times up!");
+}
+
 // global variables
 let currentQuestion = 0;
 let score = 0;
@@ -68,6 +87,8 @@ $('#nextbtn').on('click', function() {
         $("#score").text(score);
     } else {
         showCurrentQuestion();
+        $("#countdown").show();
+        countdown();
     }
 
 });
@@ -77,6 +98,8 @@ $('#startbtn').on('click', function() {
     $("#startbtn").remove();
     $("#quizbox").show();
     $("#nextbtn").show();
+    $("#countdown").show();
+    countdown();
 });
 
 //start button to start the quiz
