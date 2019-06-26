@@ -13,7 +13,7 @@ let arc = new CircleType(document.getElementById('arc'))
 
 var elem = document.getElementById('countdown');
 
-var timeLeft = 2;
+var timeLeft = 15;
 var timerId;
 
 
@@ -45,7 +45,7 @@ let currentQuestion = 0;
 let score = 0;
 
 let questions = [{
-        question: "111Is vanilla JS still considered a library?",
+        question: "Is vanilla JS still considered a library?",
         opt1: "YES",
         opt2: "NO",
         opt3: "MAYBE",
@@ -53,27 +53,27 @@ let questions = [{
         answer: "2"
     },
     {
-        question: "222Is vanilla JS still considered a library?",
-        opt1: "YES",
-        opt2: "NO",
-        opt3: "MAYBE",
-        opt4: "NO WAY",
-        answer: "2"
+        question: "Vanilla JS used to be:",
+        opt1: "Chocolate JS",
+        opt2: "Strawberry JS",
+        opt3: "Mint Chocolate Chip JS",
+        opt4: "None of the above",
+        answer: "4"
     },
     {
-        question: "333Is vanilla JS still considered a library?",
-        opt1: "YES",
-        opt2: "NO",
-        opt3: "MAYBE",
-        opt4: "NO WAY",
-        answer: "2"
+        question: "Who's using Vanilla JS?",
+        opt1: "Stack Overflow",
+        opt2: "Google",
+        opt3: "Netflix",
+        opt4: "All of the above",
+        answer: "4"
     },
     {
-        question: "444Is vanilla JS still considered a library?",
-        opt1: "YES",
-        opt2: "NO",
-        opt3: "MAYBE",
-        opt4: "NO WAY",
+        question: "Vanilla JS is not compatible with:",
+        opt1: "jQuery",
+        opt2: "Python",
+        opt3: "React",
+        opt4: "Node.js",
         answer: "2"
     }
 ];
