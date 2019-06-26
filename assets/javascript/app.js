@@ -99,6 +99,7 @@ $('#nextbtn').on('click', function() {
         $("#result").show();
         $("#score").text(score);
         $("#countdown").remove();
+        clearInterval(timerId);
     } else {
         timeLeft = 15;
         showCurrentQuestion();
