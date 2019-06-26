@@ -9,13 +9,9 @@ let arc = new CircleType(document.getElementById('arc'))
 
 // code starts here
 // timer
-
-
-var elem = document.getElementById('countdown');
-
 var timeLeft = 20;
+var elem = document.getElementById('countdown');
 var timerId;
-
 
 function countdown() {
     if (timeLeft == -1) {
@@ -85,15 +81,15 @@ $('#nextbtn').on('click', function() {
     }
     ++currentQuestion;
 
-    if (currentQuestion === questions.length) {
+    if (currentQuestion === 4) {
         $("#quizbox").remove();
         $("#result").show();
         $("#score").text(score);
-        $("#countdown").remove();
     } else {
-        timeLeft = 20;
+        timer = 20;
         showCurrentQuestion();
         $("#countdown").show();
+        // countdown();
     }
 
 });
@@ -106,3 +102,40 @@ $('#startbtn').on('click', function() {
     $("#countdown").show();
     timerId = setInterval(countdown, 1000);
 });
+
+//start button to start the quiz
+
+// $('#startbtn').on('click', function() {
+//     $('#question').text(questions[0].question);
+//     $('#opt1').text(questions[0].opt1);
+//     $('#opt2').text(questions[0].opt2);
+//     $('#opt3').text(questions[0].opt3);
+//     $('#opt4').text(questions[0].opt4);
+//     $("#startbtn").remove();
+//     $("#quizbox").show();
+//     $("#nextbtn").show();
+// });
+
+// $('#nextbtn').on('click', function() {
+//     $('#question').text(questions[1].question);
+//     $('#opt1').text(questions[1].opt1);
+//     $('#opt2').text(questions[1].opt2);
+//     $('#opt3').text(questions[1].opt3);
+//     $('#opt4').text(questions[1].opt4);
+// });
+
+// $('#nextbtn').on('click', function() {
+//     $('#question').text(questions[2].question);
+//     $('#opt1').text(questions[2].opt1);
+//     $('#opt2').text(questions[2].opt2);
+//     $('#opt3').text(questions[2].opt3);
+//     $('#opt4').text(questions[2].opt4);
+// });
+
+// $('#nextbtn').on('click', function() {
+//     $('#question').text(questions[3].question);
+//     $('#opt1').text(questions[3].opt1);
+//     $('#opt2').text(questions[3].opt2);
+//     $('#opt3').text(questions[3].opt3);
+//     $('#opt4').text(questions[3].opt4);
+// });
