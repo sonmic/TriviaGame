@@ -13,7 +13,7 @@ let arc = new CircleType(document.getElementById('arc'))
 
 var elem = document.getElementById('countdown');
 
-var timeLeft = 20;
+var timeLeft = 15;
 var timerId;
 
 
@@ -28,8 +28,17 @@ function countdown() {
 }
 
 function timesUp() {
-    alert("Times up!");
+    // $(".right").addClass("mask");
+    $(".mask").show();
+    $(".mask").css("opacity", 1);
+    $("h1,body").css("color", "#e0ded9");
+    $("#timeup").show();
+    $("#timeup").effect("slide", { direction: 'down', distance: 500 }, 2000);
+    $(document).on('click', function() {
+        location.reload();
+    });
 }
+
 
 // global variables
 let currentQuestion = 0;
@@ -91,7 +100,7 @@ $('#nextbtn').on('click', function() {
         $("#score").text(score);
         $("#countdown").remove();
     } else {
-        timeLeft = 20;
+        timeLeft = 15;
         showCurrentQuestion();
         $("#countdown").show();
     }
