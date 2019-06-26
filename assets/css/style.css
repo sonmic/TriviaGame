@@ -42,25 +42,13 @@ body {
     width: 80%;
     font-family: 'Julius Sans One', serif;
     color: #aaadb3;
-    /* font-size: 18px; */
     background-color: #fff8ed;
     background-image: display: flex;
     text-align: center;
-    /*     
-    background-image: url("../images/vanilla2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: left; */
 }
 
 p {
     padding: 10px;
-}
-
-.instructions {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .wrapper {
@@ -71,15 +59,6 @@ p {
     border-bottom: 1px solid #6c6f74;
     margin-bottom: 0px;
     position: relative;
-}
-
-#goal {
-    font-size: 60px;
-    color: #fbfdee;
-    text-shadow: 3px 3px #64686f;
-    background: #e7e8e2;
-    border-radius: 50%;
-    padding: 30px 30 30 30;
 }
 
 .left,
@@ -97,7 +76,6 @@ p {
 }
 
 #arc {
-    /* font-family: 'Marcellus SC', serif; */
     font-family: 'Julius Sans One', sans-serif;
     position: absolute;
     /* letter-spacing: 2px; */
@@ -108,17 +86,12 @@ p {
         font-size: 48px;
     }
     p {
-        padding: 3px;
-        font-size: 23px;
+        padding: 10px;
     }
-    .instructions {
-        font-family: Ropa Sans;
-        font-size: 10px;
-        /* font-weight: bold; */
-    }
-    .yum {
-        height: 150px;
-        width: 150px;
+    #icecream,
+    .icecream {
+        height: 220px;
+        width: 200px;
         flex-wrap: nowrap;
         display: inline-block;
     }
@@ -128,11 +101,22 @@ p {
     .flex-container {
         text-align: center
     }
-    #goal {
-        padding: 0px auto;
-    }
     .wrapper {
         margin: auto;
         display: block;
+        border-bottom: 0px;
+    }
+    body {
+        width: 100%;
+        margin-top: 10%;
+    }
+    #curved {
+        position: relative;
+    }
+    #arc {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
