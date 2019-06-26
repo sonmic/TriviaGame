@@ -13,7 +13,7 @@ let arc = new CircleType(document.getElementById('arc'))
 
 var elem = document.getElementById('countdown');
 
-var timeLeft = 15;
+var timeLeft = 2;
 var timerId;
 
 

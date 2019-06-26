@@ -19,7 +19,7 @@ h1 {
 }
 
 #timeup {
-    margin: 150px 0;
+    margin: 15% 0;
     display: none;
 }
 
@@ -38,6 +38,7 @@ h1 {
 
 body {
     margin: auto;
+    margin-top: 8%;
     width: 80%;
     font-family: 'Julius Sans One', serif;
     color: #aaadb3;
