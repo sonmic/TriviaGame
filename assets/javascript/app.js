@@ -121,9 +121,9 @@ const mq = window.matchMedia("(min-width: 600px)");
 
 function updateIcecreamImage(mediaQueryList) {
     if (mediaQueryList.matches) {
-        $('#icecream').html('<img class="icecream" src="../assets/images/vanilla2.png">');
+        $('#icecream').html('<img class="icecream" src="assets/images/vanilla2.png">');
     } else {
-        $('#icecream').html('<img class="icecream" src="../assets/images/vanilla1.png">');
+        $('#icecream').html('<img class="icecream" src="assets/images/vanilla1.png">');
     }
 }
 updateIcecreamImage(mq); // initial update
