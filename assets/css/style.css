@@ -1,3 +1,19 @@
+.btn {
+    background-color: #faf9f6;
+    border: none;
+    color: 6c6f74;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 1
+}
+
 .quizbox {
     display: flex;
     flex-wrap: nowrap;
@@ -70,6 +86,12 @@ p {
 
 #question,
 .qustion,
+{
+    font-weight: bold;
+}
+
+#question,
+.qustion,
 .opt {
     display: block;
     text-align: justify;
@@ -83,6 +105,7 @@ p {
 }
 
 #countdown {
+    margin-left: 45%;
     font-size: 20px;
 }
 
@@ -92,6 +115,18 @@ p {
 
 #result {
     font-size: 30px;
+}
+
+#startbtn,
+#nextbtn {
+    background-color: #fff8ed;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 
@@ -105,6 +140,18 @@ p {
     font-family: 'Julius Sans One', sans-serif;
     position: absolute;
     /* letter-spacing: 2px; */
+}
+
+#startbtn,
+#nextbtn {
+    background-color: #fff8ed;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -125,9 +172,6 @@ p {
     .container {
         padding: 2%;
     }
-    .flex-container {
-        text-align: center
-    }
     .wrapper {
         margin: auto;
         display: block;
@@ -145,5 +189,11 @@ p {
         top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    #question,
+    .question,
+    .opt,
+    .flex-container {
+        text-align: center
     }
 }

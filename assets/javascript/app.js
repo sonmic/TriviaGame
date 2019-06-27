@@ -7,6 +7,24 @@ let arc = new CircleType(document.getElementById('arc'))
 // end of arched text
 
 
+
+// button on hover effect = COULD NOT FINISH!!
+
+// $('.btn').hover(function() {
+//     $(".btn").effect("slide", { times: 1 }, 1000);
+//     // $(".btn").removeClass("btn");
+// });
+
+
+// button effect ends here
+
+
+
+
+// code starts here
+
+// timer
+
 var elem = document.getElementById('countdown');
 
 var timeLeft = 15;
@@ -83,6 +101,7 @@ function showCurrentQuestion() {
 }
 
 $('#nextbtn').on('click', function() {
+
     let userInput = $('#quizbox input:checked').val();
     if (!userInput) {
         $("#error").fadeIn("slow");
@@ -118,6 +137,7 @@ $('#startbtn').on('click', function() {
     $("#quizbox").show();
     $("#nextbtn").show();
     $("#countdown").show();
+    // $("#nextbtn").addClass("btn");
     timerId = setInterval(countdown, 1000);
 });
 
