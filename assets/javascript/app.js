@@ -118,7 +118,7 @@ $('#nextbtn').on('click', function() {
     if (currentQuestion === questions.length) {
         $("#quizbox").remove();
         $("#result").show();
-        $("#score").text(score);
+        $("#score").text(score + " / " + (questions.length));
         $("#countdown").remove();
         clearInterval(timerId);
     } else {
