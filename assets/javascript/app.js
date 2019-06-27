@@ -9,7 +9,7 @@ let arc = new CircleType(document.getElementById('arc'))
 
 var elem = document.getElementById('countdown');
 
-var timeLeft = 2;
+var timeLeft = 15;
 var timerId;
 
 
@@ -85,9 +85,11 @@ function showCurrentQuestion() {
 $('#nextbtn').on('click', function() {
     let userInput = $('#quizbox input:checked').val();
     if (!userInput) {
-        $("#error").show();
+        $("#error").fadeIn("slow");
+        $("#error").fadeOut("slow");
         return;
     }
+
     if (userInput === questions[currentQuestion].answer) {
         console.log(userInput);
         ++score;
