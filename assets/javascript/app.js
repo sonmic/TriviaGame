@@ -88,6 +88,10 @@ function showCurrentQuestion() {
 
 $('#nextbtn').on('click', function() {
     let userInput = $('#quizbox input:checked').val();
+    if (!userInput) {
+        alert("Select");
+        return;
+    }
     if (userInput === questions[currentQuestion].answer) {
         console.log(userInput);
         ++score;
@@ -102,6 +106,7 @@ $('#nextbtn').on('click', function() {
         clearInterval(timerId);
     } else {
         timeLeft = 15;
+        $('#quizbox input:checked').prop('checked', false);
         showCurrentQuestion();
         $("#countdown").show();
     }
