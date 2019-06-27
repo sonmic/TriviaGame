@@ -68,6 +68,32 @@ p {
     margin: auto;
 }
 
+#question,
+.qustion,
+.opt {
+    display: block;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#countdown,
+#error,
+.question {
+    margin-bottom: 10px;
+}
+
+#countdown {
+    font-size: 20px;
+}
+
+#error {
+    color: #ef6b80;
+}
+
+#result {
+    font-size: 30px;
+}
+
 
 /* curved text */
 

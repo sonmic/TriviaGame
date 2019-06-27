@@ -11,8 +11,6 @@
     <meta property="og:url" content="https://sonmic.github.io/TriviaGame/">
     <link rel="shortcut icon" type="image/png" href="assets/images/vanilla5.png" />
     <title>Vanilla JS</title>
-    <!-- Bootstrap CDN -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
 
     <!-- Linking CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -45,12 +43,16 @@
         </div>
         <div class="right">
             <h1>Vanilla JS</h1>
-
-            <p>Vanilla JS is a fast, lightweight, cross-platform framework for building incredible, powerful JavaScript applications.</p>
+            <div id="intro">
+                <p>Vanilla JS is a fast, lightweight, cross-platform framework for building incredible, powerful JavaScript applications.</p>
+                <p>Ready to take a Vanilla JS quiz?</p>
+            </div>
             <button class="flex-container" id="startbtn">START</button>
             <div id="countdown" style="display:none;"></div>
             <div class="flex-container" id="quizbox" style="display:none;">
-                <div class="qustion"><span id="question"></span></div>
+                <div class="question"><span id="question"></span></div>
+
+                <div id="error" style="display:none;">Please select an answer.</div>
                 <label class="opt"><input type="radio" name="option" value="1"> <span id="opt1"></span></label>
                 <label class="opt"><input type="radio" name="option" value="2"> <span id="opt2"></span></label>
                 <label class="opt"><input type="radio" name="option" value="3"> <span id="opt3"></span></label>
@@ -58,10 +60,11 @@
                 <br>
                 <button id="nextbtn" class="nextbtn" style="display:none;">NEXT</button>
             </div>
-            <div id="result" class="container result" style="display:none;">YOUR SCORE:<span id="score"></span></div>
+            <div id="result" class="container result" style="display:none;">YOUR SCORE: <span id="score"></span></div>
         </div>
         <div class="mask">
-            <div id="timeup">Time is up!</div>
+            <div id="timeup">Time is up!
+            </div>
         </div>
     </div>
 
