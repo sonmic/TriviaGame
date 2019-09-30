@@ -8,6 +8,11 @@
     border-radius: 50%;
 }
 
+#intro p{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
 .btn {
     background-color: #dce6e6;
     /* background-color: #e9f3f2; */
